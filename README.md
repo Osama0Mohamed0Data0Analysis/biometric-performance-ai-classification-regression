@@ -1,52 +1,51 @@
-# 🤖 Biometric & Physical Performance AI System: Classification & Regression
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rounded&color=0:1D4350,100:A43931&height=150&section=header&text=Biometric%20Performance%20AI&fontSize=34&fontColor=ffffff" alt="Biometric Performance AI project banner" width="100%" />
 
-> مشروع ذكاء اصطناعي متقدم (`Machine Learning & Deep Learning`) يهدف إلى التنبؤ بمستويات أداء اللياقة البدنية والدرجات (Classification) وتوقع مسافات الوثب الطويل (Regression) بناءً على القياسات الحيوية والجسدية.
+  <h1>Biometric & Physical Performance Prediction</h1>
+  <p><strong>Classification and regression with machine learning</strong></p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Scikit-learn" />
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter Notebook" />
+</div>
 
----
+> An end-to-end machine-learning study using 13,392 records and 12 features to explore physical-performance outcomes.
 
-## 🎯 1. Project Overview (نظرة عامة على المشروع)
-يتناول هذا المشروع بناء نظام ذكاء اصطناعي متكامل يعتمد على مجموعة بيانات ضخمة تضم **13,392 سجلاً** و **12 متغيراً حيوياً** (تشمل العمر، الجنس، الوزن، نسبة الدهون، الضغط، مؤشرات القوة والمرونة). 
-* **الهدف الأساسي (Classification Task):** بناء نموذج تصنيف ذكي للتنبؤ بفئة الأداء (Grades A/B/C/D) بدقة عالية.
-* **الهدف الثانوي (Regression Task):** تطوير نموذج انحدار للتنبؤ بمسافة الوثب الطويل (`broad_jump_cm`) استناداً إلى مقاييس القوة البدنية.
+## Project Overview
 
----
+This project investigates two prediction tasks:
 
-## 🛠️ 2. Tech Stack & Methodology (الأدوات والمنهجية)
-* **Python & Machine Learning Libraries:**
-  * **Scikit-learn:** لتطبيق النماذج (`KNN`, `Decision Tree`, `SVM`, `Linear Regression`) وتقييم الأداء.
-  * **Neural Networks (MLP Classifier & Regressor):** بناء شبكات عصبية متعددة الطبقات (`[128, 64]`) لتحقيق أفضل دقة.
-  * **Pandas & NumPy & Seaborn:** لمعالجة البيانات، تحليل التوزيعات، كشف القيم الشاذة (`IQR Method`)، ورسم مصفوفات الارتباط والـ Confusion Matrix.
+- **Classification:** predict performance grades (A/B/C/D).
+- **Regression:** estimate broad-jump distance from physical measurements.
 
----
+The workflow covers data exploration, outlier analysis, model training, and evaluation.
 
-## 📈 3. Key Model Results & Performance (نتائج النماذج)
+## Methods & Tools
 
-### 🔹 أ) مهمة التصنيف (Classification Results):
-* **أفضل نموذج:** شبكة عصبية (`Neural Network [128,64]`) حققت:
-  * **Test Accuracy:** `74.65%`
-  * **F1-Score:** `0.7473`
-  * **10-Fold CV Accuracy:** `0.7331 (±0.013)`
-* **النموذج البديل القوي:** `SVM (RBF)` بدقة `71.67%`.
+- Python, Pandas, NumPy, Seaborn
+- Scikit-learn models: KNN, Decision Tree, SVM, and Linear Regression
+- MLP classifier and regressor neural networks
+- IQR-based outlier analysis, correlation analysis, and model evaluation
 
-### 🔹 ب) مهمة الانحدار (Regression Results):
-* **أفضل نموذج:** `MLP Regressor [128,64]` أو `SVR (RBF)`:
-  * **$R^2$ Score:** `0.7887` (يفسر حوالي 79% من التباين في البيانات).
-  * **RMSE:** `18.39 cm`
+## Results
 
----
+| Task | Result |
+|---|---|
+| Classification — MLP `[128, 64]` | Test accuracy **74.65%**, F1 **0.7473** |
+| Classification — 10-fold CV | Accuracy **0.7331 ± 0.013** |
+| Regression — MLP `[128, 64]` / SVR | R² **0.7887**, RMSE **18.39 cm** |
 
-## 📸 4. Project Visualizations (من لقطات الداشبورد والتحليلات)
+## Visualizations
 
-### 🔹 أ) توزيعات البيانات وتحليل القيم الشاذة:
-![Data Distributions & Outliers](assets/distribution_outliers.png)
+### Distributions and outliers
+![Data distributions and outliers](assets/distribution_outliers.png)
 
-### 🔹 ب) مصفوفة الارتباط (Correlation Heatmap):
-![Correlation Heatmap](assets/correlation_heatmap.png)
+### Correlation heatmap
+![Correlation heatmap](assets/correlation_heatmap.png)
 
-### 🔹 ج) مقارنة النماذج ومصفوفة الارتباك (Confusion Matrix):
-![Model Comparison & Confusion Matrix](assets/model_comparison_confusion.png)
+### Model comparison and confusion matrix
+![Model comparison and confusion matrix](assets/model_comparison_confusion.png)
 
----
+## Author
 
-## 👨‍💻 Author (إعداد)
-* **Osama Mohamed** - [GitHub Profile](https://github.com/Osama0Mohamed0DataAnalysis)
+**Osama Mohamed** · [GitHub Profile](https://github.com/Osama0Mohamed0Data0Analysis)
